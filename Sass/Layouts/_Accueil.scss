@@ -1,7 +1,6 @@
 @use '../Utils/'as u;
 
-
-@media screen and (max-width:828px){
+@include u.breakpoint(laptop){
     section{
         grid-template-columns: 1fr;
         .bloc2{
@@ -33,6 +32,9 @@
             }
         }
     }
+}
+@media screen and (max-width:828px){
+   
 }
 
 
