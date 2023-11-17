@@ -1,0 +1,33 @@
+@use '../Utils/'as u;
+
+
+@media screen and (max-width:828px){
+    section{
+        grid-template-columns: 1fr;
+        .bloc2{
+            display: none;
+        }
+        .bloc1{
+            padding: 5%;
+            h1{
+                margin-bottom: 0px;
+                font-size: 1.7rem;
+            }
+            .logo{
+                img{
+                    width: 80px;
+                }
+                p i{
+                    display: block;
+                }
+            }
+            .student_image{
+                    margin-top: 30px;
+                    padding-bottom: 10px;
+                    display: block;
+            }
+        }
+    }
+}
+
+

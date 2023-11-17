@@ -1,0 +1,157 @@
+:root {
+  --gray: rgb(128,128,128);
+  --blending_blue: #0075df;
+  --sky_blue: #018ac9;
+  --principalcolor: #f5f5f5;
+  --principalcoloropacity:#d4e2efa2;
+  --blackColor: #000;
+  --white: #fff;
+}
+
+body {
+  width: 100%;
+  font-family: "Sen", sans-serif;
+  background-color: var(--principalcolor);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section .bloc1 {
+  padding: 40px;
+  padding-bottom: 60px;
+}
+section .bloc1 .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .bloc1 .logo img {
+  width: 120px;
+}
+section .bloc1 .logo i {
+  cursor: pointer;
+  display: none;
+}
+section .bloc1 h1 {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  font-size: 2.6rem;
+}
+section .bloc1 div p {
+  color: gray;
+}
+section .bloc1 div button {
+  margin-top: 5%;
+}
+section .bloc1 .student_image {
+  display: none;
+  width: 100%;
+}
+section .bloc1 .student_image img {
+  width: 100%;
+  height: auto;
+}
+section .bloc2 {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../../Images/student3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .bloc2 nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40%;
+  background-color: rgba(245, 245, 245, 0.8705882353);
+}
+section .bloc2 nav a {
+  padding: 10px;
+  color: var(--sky_blue);
+  font-weight: 700;
+}
+section .bloc2 nav a:hover {
+  background-color: var(--sky_blue);
+  color: var(--white);
+  font-weight: initial;
+}
+section .bloc2 .popup {
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  background-color: var(--white);
+  float: right;
+}
+section .bloc2 .popup .icon {
+  display: flex;
+  gap: 10px;
+  color: green;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: var(--sky_blue);
+}
+
+button {
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--sky_blue);
+  font-family: "Sen", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  transition: all 0.3s ease-in-out;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+  transform: translateY(-1px);
+  transform: scale(1.07);
+  transition-duration: 300ms;
+}
+
+@media screen and (max-width: 828px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  section .bloc2 {
+    display: none;
+  }
+  section .bloc1 {
+    padding: 5%;
+  }
+  section .bloc1 h1 {
+    margin-bottom: 0px;
+    font-size: 1.7rem;
+  }
+  section .bloc1 .logo img {
+    width: 80px;
+  }
+  section .bloc1 .logo p i {
+    display: block;
+  }
+  section .bloc1 .student_image {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    display: block;
+  }
+}/*# sourceMappingURL=index.css.map */
