@@ -147,7 +147,7 @@ button:hover {
     width: 80px;
   }
   section .bloc1 .logo p i {
-    border-radius: 50%;
+    border-radius: 15px;
     padding: 5px;
     display: block;
     background-color: var(--sky_blue);
