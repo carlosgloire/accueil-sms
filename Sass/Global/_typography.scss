@@ -25,13 +25,12 @@ button{
     letter-spacing: 2px;
     font-size: 1rem;
     border-radius: 4px;
-   
 }
 button:hover{
     transition: all 0.3s ease-in-out;
     transition-timing-function: ease-in-out;
     transition-delay: 150ms;
     transform: translateY(-1px);
-    transform: scale(1.07);
+    transform: scale(1.05);
     transition-duration: 300ms;
 }

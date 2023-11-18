@@ -4,7 +4,6 @@
 body{
     width: 100%;
     font-family: u.$font;
-
 }
 section{
     display: grid;
@@ -29,7 +28,6 @@ section{
             margin-top: 20%;
             margin-bottom: 10%;
             font-size: 2.6rem;
-
         }
         div p{
             color: gray;
@@ -100,10 +98,8 @@ section{
                 background-color: var(--sky_blue);
                 color: var(--white);
                 font-weight: initial;
-                
             }
         }
-       
         .popup{
             padding: 10px;
             border-radius: 10px;
@@ -115,7 +111,6 @@ section{
                 gap: 10px;
                 color: green;
             }
-            
         }
     }
 }
