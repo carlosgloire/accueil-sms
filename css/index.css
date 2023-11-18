@@ -63,6 +63,7 @@ section .bloc1 .menu {
   border-radius: 5px;
   transition: transform 0.5s ease-in-out;
   width: 90%;
+  box-shadow: 0px 0px 1px 0px var(--gray);
 }
 section .bloc1 .menu i {
   color: var(--sky_blue);
