@@ -1,9 +1,7 @@
 :root {
   --gray: rgb(128,128,128);
-  --blending_blue: #0075df;
   --sky_blue: #018ac9;
-  --principalcolor: #f5f5f5;
-  --principalcoloropacity:#d4e2efa2;
+  --backgroundcolor: #f5f5f5;
   --blackColor: #000;
   --white: #fff;
 }
@@ -11,7 +9,6 @@
 body {
   width: 100%;
   font-family: "Sen", sans-serif;
-  background-color: var(--principalcolor);
 }
 
 section {
@@ -21,6 +18,7 @@ section {
 section .bloc1 {
   padding: 40px;
   padding-bottom: 60px;
+  background-color: var(--backgroundcolor);
 }
 section .bloc1 .logo {
   display: flex;
@@ -53,11 +51,36 @@ section .bloc1 .student_image img {
   width: 100%;
   height: auto;
 }
+section .bloc1 .menu {
+  display: none;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+}
+section .bloc1 .menu i {
+  color: var(--sky_blue);
+  cursor: pointer;
+}
+section .bloc1 .menu nav {
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  text-align: center;
+  background-color: var(--backgroundcolor);
+  border-radius: 5px;
+}
+section .bloc1 .menu nav a {
+  padding: 5px;
+  color: var(--sky_blue);
+}
+section .bloc1 .menu nav a:hover {
+  color: black;
+}
 section .bloc2 {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url("../../Images/student3.jpg");
+  background-image: url("../../Images/student3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +170,7 @@ button:hover {
     width: 80px;
   }
   section .bloc1 .logo p i {
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
     padding: 6px;
     display: block;

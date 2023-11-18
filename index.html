@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Maven+Pro&family=Sen:wght@400;700&display=swap" rel="stylesheet">
-
     <title>Accueil</title>
 </head>
 <body>
@@ -17,7 +16,17 @@
             
             <div class="logo">
                 <img src="Images/logo.png" alt="Logo image">
-                <p><i class="fa-solid fa-bars"></i></p>
+                <p><i class="fa-solid fa-bars" id="openPopup"></i></p>
+           
+            </div>
+            <div class="menu" id="menu">
+                <i id="closePopup" class="fa-solid fa-xmark close"></i>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </nav>
             </div>
             <h1>Une bonne <span>éducation </span>est la base d’un avenir meilleur</h1>
             <div class="student_image">
@@ -49,5 +58,6 @@
             
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
